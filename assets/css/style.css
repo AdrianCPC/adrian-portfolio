@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+html {
+    /*font-size: 62.5%;*/
+    scroll-behavior: smooth;
+}
+body {
+    margin: var(--header-height)0 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    background-color: var(--first-color-lighten);
+    color: var(--text-color-body);
+    line-height: 1.6;
+}
+
+/*
+=======================
+Variables
+=======================
+*/
+
+:root {
+    --header-height: 3rem;
+    --nav-wifht: 324px;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --first-color: #000;
+    --first-color-light: rgb(117, 117, 117);
+    --first-color-lighter: rgb(194, 189, 189);
+    --text-color-nav: whitesmoke;
+    --text-color-body: #383838;
+    --first-color-list: #653472;
+    --first-color-lighten: #fffafa;
+    --body-font: 'Open Sans', sans-serif;
+    --h1-font-size:1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size:.938rem;
+    --small-font-size:.813rem;
+    --smaller-font-size:.75rem;
+    /*--margins--*/
+    --mb-1:.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --z-fixed: 100;
+}
+/*
+================
+Init CSS
+================
+*/
+h3 {
+    font-weight: var(--font-semi-bold);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color-nav);
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/*
+====================
+Style css reusable
+====================
+*/
+.section {
+    padding: 4rem 0 2rem;
+}
+.section-title {
+    font-size: var(--h1-font-size);
+    color: var(--first-color-light);
+    margin-bottom: var(--mb-3);
+    text-align: center;
+}
+.section-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--first-color-lighter);
+    text-align: center;
+    font-weight: var(--font-bold);
+    margin-bottom: .25rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    :root {
+        --h1-font-size:2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size:1rem;
+        --small-font-size:.875rem;
+        --smaller-font-size:.813rem;
+    }
+}
