@@ -263,6 +263,33 @@ Home
     color: var(--first-color-light);
 }
 
+
+/*
+==========
+About
+==========
+*/
+.about__container {
+    row-gap: 2 rem;
+}
+.about__description {
+    margin-bottom: var(--mb-4);
+}
+
+/*
+=================
+Skill container
+=================
+*/
+.skils__container {
+    row-gap: 2rem;
+}
+.skills__subtitle {
+    font-size: var(--h3-font-size);
+    color: var(--first-color-light);
+    margin-bottom: var(--mb-2);
+}
+
 @media screen and (min-width: 768px) {
     :root {
         --h1-font-size:2.25rem;
