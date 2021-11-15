@@ -314,9 +314,9 @@ Skill container
     margin: 0 var(--mb-2);
     margin-bottom: var(--mb-4);
 }
-.skills__name {
+/*.skills__name {
     text-transform: uppercase;
-}
+}*/
 
 /*
 ===========
