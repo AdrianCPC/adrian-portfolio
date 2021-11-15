@@ -170,7 +170,13 @@ Navigation
 .nav__toggle {
     color: var(--first-color-lighter);
     font-size: 1.3rem;
+    padding-left: 20px;
     cursor: pointer;
+}
+
+.nav__logo img {
+    padding: 2px 20px 2px 0;
+    /* width: 13%; */
 }
 /*
 =============================
@@ -344,6 +350,48 @@ Projects
 .projects__img:hover .projects__data {
     bottom: 0;
 
+}
+
+/*
+============
+Contact
+============
+*/
+.contact__container {
+    row-gap: 3rem;
+}
+.contact__input {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color: var(--first-color-lighter);
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-2);
+}
+.contact ::placeholder {
+    color: var(--first-color-light);
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+}
+.contact__button {
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+}
+.contact__address {
+    margin-bottom: var(--mb-3);
+}
+.contact__subtitle {
+    font-size: var(--h3-font-size);
+    color: var(--text-color-body);
+    margin-bottom: var(--mb-1);
+}
+.contact__text {
+    display: block;
+    /* padding-left: 1rem; */
 }
 
 @media screen and (min-width: 768px) {
