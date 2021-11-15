@@ -50,6 +50,17 @@ Variables
     --mb-5: 2.5rem;
     --z-fixed: 100;
 }
+/*--First Mobile--*/
+@media screen and (min-width: 768px) {
+    :root {
+        --h1-font-size:2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size:1rem;
+        --small-font-size:.875rem;
+        --smaller-font-size:.813rem;
+    }
+}
 /*
 ================
 Init CSS
@@ -394,13 +405,136 @@ Contact
     /* padding-left: 1rem; */
 }
 
+/*
+=================
+Footer
+=================
+*/
+.footer {
+    height: 33vh;
+    background-color: var(--first-color-light);
+    color: var(--first-color-lighten);
+    text-align: center;
+}
+.footer__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-2);
+}
+.footer__description {
+    margin-bottom: var(--mb-2);
+}
+.footer__social {
+    margin-bottom: 3rem;
+}
+.footer__link {
+    display: inline-flex;
+    background-color: var(--text-color-body);
+    color: var(--first-color-lighten);
+    font-size: 1.1rem;
+    border-radius: 50%;
+    padding: 0.40rem;
+    margin: 0 var(--mb-1);
+    transition: 0.3s;
+}
+.footer__link:hover {
+    background-color: var(--first-color-sunny);
+    color: var(--first-color);
+}
+.footer__copy {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-nav);
+}
+
+
+/*
+==============================
+Media queries
+=============================
+*/
+
+
+/*
+===============
+Tablet
+===============
+*/
 @media screen and (min-width: 768px) {
-    :root {
-        --h1-font-size:2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size:1rem;
-        --small-font-size:.875rem;
-        --smaller-font-size:.813rem;
+    .home__button {
+        width: initial;
+    }
+    .nav__menu {
+        width: var(--nav-wifht);
+    }
+    /*.about__container {
+        grid-template-columns: repeat(2, 1fr);
+    }*/
+    .about__data {
+        text-align: initial;
+    }
+    .about__description {
+        margin-bottom: var(--mb-5);
+    }
+    .skills__container,
+    .projects__container,
+    .contact__container,
+    .contact__inputs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*.project__container {
+        background-color: var(--text-color-body);
+        grid-template-columns: 2fr 1.2fr;
+        padding: 0 2rem;
+        border-radius: 0.5rem;
+    }*/
+    .contact__inputs {
+        display: grid;
+        column-gap: 1.5rem;
+    }
+    .contact__address {
+        padding-left: 3rem;
+    }
+    .footer {
+        background: none;
+    }
+    .footer__container {
+        background-color: var(--first-color-light);
+        padding: 3rem 0;
+        /*border-radius: 0.5rem;*/
     }
 }
+/*
+=============
+Desktop
+=============
+*/
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0;
+        padding-left: var(--nav-wifht);
+    }
+    .header__one {
+        width: 0;
+    }
+    .nav__toggle,
+    .nav__logo,
+    .nav__close {
+        display: none;
+    }
+    .nav__menu {
+        left: 0;
+    }
+    .home__container {
+        height: 100vh;
+    }
+    .section {
+        padding: 3rem 0 2rem;
+    }
+    /*.bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+    .projects__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
