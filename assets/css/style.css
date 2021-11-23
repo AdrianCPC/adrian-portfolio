@@ -218,10 +218,10 @@ Home
     text-align: center;
 }
 .home__img {
-    padding-top: 1.3rem;
-    padding-left: 0.8rem;
-    width: 160px;
-    height: 160px;
+    /* padding-top: 1.3rem;
+    padding-left: 0.8rem; */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     background-color: var(--first-color-lighter);
@@ -412,7 +412,7 @@ Footer
 */
 .footer {
     height: 33vh;
-    background-color: var(--first-color-light);
+    background-color: var(--first-color);
     color: var(--first-color-lighten);
     text-align: center;
 }
@@ -451,7 +451,26 @@ Footer
 Media queries
 =============================
 */
-
+/*
+===================
+Mobile - very small < 340px
+===================
+*/
+@media (min-width: 100px) {
+    .home__img {
+        margin-top: 60px;
+    }
+    .button {
+        font-size: xx-small;
+        padding: 0.8rem;
+    }
+    .section-title {
+        margin-top: 2rem;
+    }
+    .footer {
+        height: 55vh;
+    }
+}
 
 /*
 ===============
@@ -460,7 +479,7 @@ Tablet
 */
 @media screen and (min-width: 768px) {
     .home__button {
-        width: initial;
+        width: 20%;
     }
     .nav__menu {
         width: var(--nav-wifht);
@@ -497,7 +516,7 @@ Tablet
         background: none;
     }
     .footer__container {
-        background-color: var(--first-color-light);
+        background-color: var(--first-color);
         padding: 3rem 0;
         /*border-radius: 0.5rem;*/
     }
